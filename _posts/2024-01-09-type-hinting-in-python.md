@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Type Hinting in Python
+categories: [Programming]
+tags: [Python, Coding]
 ---
 
 If you've ventured into type hinting in Python, you're probably aware of the fundamentals. You're comfortable hinting function arguments and return types using basic types like `int` or `str`, and you may even be familiar with more complex typing like `List[str]` or `Dict[str, int]`. But the prospect of *generic* type hinting may seem confusing. What are they? Why do they exist? How do I use them? What value do they add?

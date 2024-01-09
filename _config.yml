@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/19868515
+avatar: "/assets/img/AkeemFrame.jpeg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true

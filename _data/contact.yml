@@ -2,17 +2,23 @@
 
 - type: github
   icon: "fab fa-github"
+  url: "https://github.com/aoamusat"
+  noblank: false 
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
+  url: "https://twitter.com/olayml"
+  noblank: false
 
 - type: email
   icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+  url: "mailto:aoamusat@gmail.com"
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+- type: linkedin
+  icon: 'fab fa-linkedin'   
+  url:  'https://linkedin.com/in/aoamusat'
+  noblank: false 
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon

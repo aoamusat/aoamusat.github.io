@@ -65,15 +65,9 @@ christopher@ubuntu-playground:~/GitHub/typevar-example$ python3 main.py
 
 The problem is when we try to modify our code further to use the `chunk` variable pulled from the `chunk_list` function. Because we've type hinted the return value as `Any`, our IDE doesn't know what options to offer us when trying to interact with this object. If we hover our cursor over the `chunk` object, it tells us it's of type `List[Any]`.
 
-![]({{ site.baseurl }}/images/2023/typevars/chunk_cursor_hover.png)
-
 If we extract the first item from the list `chunk`, we still get no help from our IDE.
 
-![]({{ site.baseurl }}/images/2023/typevars/first_item_chunk_cursor_hover.png)
-
 If we attempt to use the first item, our IDE is still of no help. To use this item properly, we have to mentally know that the first item is an `int` and that we can use it as such. That's additional cognitive overhead for us in our already-encumbered mind. No thanks!
-
-![]({{ site.baseurl }}/images/2023/typevars/first_item_chunk_dot.png)
 
 The problem here is that the `Any` type hint truly means *anything*. It's *possible* that the `chunk_list` function will take in a list of integers and return a list of integers, but it's also *possible* that it will take in a list of integers and return a list of strings. The `Any` type hinting doesn't give us any additional information about the types of objects that are passed into or returned from the function.
 
@@ -121,15 +115,9 @@ christopher@ubuntu-playground:~/GitHub/typevar-example$ python3 main.py
 
 The real power from our use of generics comes when we interact with the `chunk` variable. If we hover over it, we see that it's of type `List[int]` now, not a type of `List[Any]`.
 
-![]({{ site.baseurl }}/images/2023/typevars/typed_chunk_cursor_hover.png)
-
 If we extract the first item from the list and hover our cursor over it, our IDE confirms it's of type `int`.
 
-![]({{ site.baseurl }}/images/2023/typevars/first_item_typed_chunk_cursor_hover.png)
-
 Finally, if we attempt to use the first item, our IDE knows it's an `int` and offers us all the options we'd expect. Neat!
-
-![]({{ site.baseurl }}/images/2023/typevars/first_item_typed_chunk_dot.png)
 
 This is the power of generic type hinting! It allows us to be more confident in our code and write it more quickly. It also allows us to reason about other people's code, as our IDE can help us more easily understand what types of objects are being passed around code that may be unfamiliar to us.
 

@@ -50,7 +50,7 @@ google_site_verification: FatzDnCbdGT9H2P_wBjCEfx8B84xcX9k0MRZCtTZB6E
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: UA-85711286-1
 
 # Prefer color scheme setting.
 #
